@@ -366,8 +366,8 @@ function initContactForm() {
                     const formData = new FormData(contactForm);
                     const data = Object.fromEntries(formData);
                     
-                    // Send to backend - use relative path
-                    const response = await fetch('/api/contact', {
+                    // Send to Formspree
+                    const response = await fetch('https://formspree.io/f/xjkjvebg', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
@@ -375,17 +375,18 @@ function initContactForm() {
                         body: JSON.stringify(data)
                     });
                     
-                    const result = await response.json();
-                    
-                    if (result.success) {
+                    if (response.ok) {
                         // Show success message
                         contactForm.reset();
                         document.getElementById('successMessage').classList.remove('hidden');
+                        
+                        console.log('✅ Contact form submitted successfully via Formspree:', data);
                     } else {
-                        throw new Error(result.message || 'Failed to send message');
+                        const errorData = await response.json();
+                        throw new Error(errorData.error || 'Failed to send message');
                     }
                 } catch (error) {
-                    console.error('Contact form error:', error);
+                    console.error('❌ Contact form error:', error);
                     document.getElementById('errorMessage').classList.remove('hidden');
                 } finally {
                     // Reset button state
