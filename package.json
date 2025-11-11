@@ -1,0 +1,10 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'Building portfolio...'",
+    "dev": "echo 'Development server'"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
