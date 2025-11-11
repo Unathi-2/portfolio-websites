@@ -213,19 +213,21 @@ class CustomNavbar extends HTMLElement {
     });
 
     // Update active link based on current page
-    const updateActiveLink = () => {
-      const path = window.location.pathname.split('/').pop();
-      const navLinks = this.shadowRoot.querySelectorAll('.nav-link');
-      navLinks.forEach(link => {
-        if ((path === 'index.html' || path === '') && link.getAttribute('href') === 'index.html') {
-          link.classList.add('active');
-        } else if (path === link.getAttribute('href')) {
-          link.classList.add('active');
-        } else {
-          link.classList.remove('active');
-        }
-      });
-    };
+const updateActiveLink = () => {
+  const path = window.location.pathname;
+  const navLinks = this.shadowRoot.querySelectorAll('.nav-link');
+  
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    link.classList.remove('active');
+    
+    if (path === '/' && href === 'index.html') {
+      link.classList.add('active');
+    } else if (path.includes(href.replace('.html', ''))) {
+      link.classList.add('active');
+    }
+  });
+};
 
     // Initial update and listen for navigation
     updateActiveLink();
