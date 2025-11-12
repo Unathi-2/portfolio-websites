@@ -6,7 +6,7 @@
     <title>Kekeletso Basholo | Data Analyst Portfolio</title>
     <meta name="description" content="Data Analyst and Math Tutor specializing in Python, R, SQL, and Machine Learning. Transforming complex data into actionable insights.">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="components/navbar.js"></script>
     <script src="components/footer.js"></script>
@@ -15,137 +15,171 @@
     <custom-navbar></custom-navbar>
     
     <main id="main-content" class="container mx-auto px-4 py-12">
-        <!-- Enhanced Hero Section -->
-        <section class="flex flex-col md:flex-row items-center gap-12 mb-20 py-16">
-            <div class="md:w-1/2 animate-fade-in-up">
-                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 dark:text-white mb-4 leading-tight">
-                    Transforming Data Into 
-                    <span class="text-blue-600 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Actionable Insights</span>
-                </h1>
-                <h2 class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6 font-medium">Data Analyst | Math Tutor | Problem Solver</h2>
-                <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
-                    Passionate about uncovering patterns in data and transforming complex information into 
-                    clear, actionable strategies. Currently working at 
-                    <span class="font-semibold text-blue-600 dark:text-blue-400">CAPACITI</span>.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="projects.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg text-center">
-                        View My Projects
-                    </a>
-                    <a href="contact.html" class="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:-translate-y-1 text-center dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-400 dark:hover:text-white">
-                        Get In Touch
-                    </a>
-                </div>
-                
-                <!-- Stats Grid -->
-                <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
-                        <div class="text-2xl font-bold text-blue-600 dark:text-blue-400">2</div>
-                        <div class="text-sm text-gray-600 dark:text-gray-400">Projects Completed</div>
-                    
-                    </div>
-                    <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
-                        <div class="text-2xl font-bold text-purple-600 dark:text-purple-400">30+</div>
-                        <div class="text-sm text-gray-600 dark:text-gray-400">Students Tutored</div>
-                    </div>
-                    <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
-                        <div class="text-2xl font-bold text-orange-600 dark:text-orange-400">2+</div>
-                        <div class="text-sm text-gray-600 dark:text-gray-400">Years Experience</div>
-                    </div>
-                </div>
-            </div>
-            <div class="md:w-1/2 animate-fade-in-up" style="animation-delay: 0.2s;">
+                <!-- Redesigned Hero Section -->
+        <section class="flex flex-col items-center gap-12 mb-20 py-16">
+            <!-- Profile Picture Section -->
+            <div class="w-full max-w-md flex justify-center">
                 <div class="relative">
-                    <img src="http://static.photos/technology/640x360/10" alt="Data Analyst at work" class="rounded-2xl shadow-2xl w-full h-auto">
-                    <div class="absolute -bottom-6 -right-6 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
+                    <!-- Round Profile Picture Container -->
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-blue-400 to-purple-600 p-1 shadow-2xl">
+                        <div class="w-full h-full rounded-full bg-white dark:bg-gray-800 flex items-center justify-center overflow-hidden">
+                            <!-- Placeholder for your photo -->
+                            <div class="text-center p-8">
+                                <svg class="w-24 h-24 mx-auto text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                                </svg>
+                                <p class="text-gray-500 dark:text-gray-400 text-sm mt-2">Your Professional Photo</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Status Badge -->
+                    <div class="absolute -bottom-2 -right-2 bg-green-500 text-white px-4 py-2 rounded-full shadow-lg">
                         <div class="flex items-center space-x-2">
-                            <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                            <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Available for projects</span>
+                            <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                            <span class="text-sm font-medium">Available</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Enhanced Skills Section -->
-        <section class="mb-20">
-            <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-4">My Analytical Toolkit</h2>
-            <p class="text-gray-600 dark:text-gray-400 text-center mb-12 max-w-2xl mx-auto">
-                Leveraging cutting-edge tools and technologies to extract meaningful insights from complex datasets
-            </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:border-gray-700 skill-card">
-                    <div class="flex items-center mb-4">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="h-12 w-12 mr-4" alt="Python" loading="lazy">
-                        <h3 class="font-bold text-xl text-gray-800 dark:text-white">Python</h3>
-                    </div>
-                    <p class="text-gray-600 dark:text-gray-400 mb-4">Advanced data analysis, machine learning, and automation</p>
-                    <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                        <div class="bg-blue-600 h-2.5 rounded-full skill-bar" style="width: 50%"></div>
-                    </div>
-                    <p class="text-right text-sm text-gray-500 dark:text-gray-400 mt-2">Intermediate</p>
-                </div>
-                
-                <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:border-gray-700 skill-card">
-                    <div class="flex items-center mb-4">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" class="h-12 w-12 mr-4" alt="R" loading="lazy">
-                        <h3 class="font-bold text-xl text-gray-800 dark:text-white">R Programming</h3>
-                    </div>
-                    <p class="text-gray-600 dark:text-gray-400 mb-4">Statistical analysis, data visualization, and modeling</p>
-                    <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                        <div class="bg-blue-600 h-2.5 rounded-full skill-bar" style="width: 55%"></div>
-                    </div>
-                    <p class="text-right text-sm text-gray-500 dark:text-gray-400 mt-2">Intermediate</p>
-                </div>
-                
-                <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:border-gray-700 skill-card">
-                    <div class="flex items-center mb-4">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="h-12 w-12 mr-4" alt="SQL" loading="lazy">
-                        <h3 class="font-bold text-xl text-gray-800 dark:text-white">SQL</h3>
-                    </div>
-                    <p class="text-gray-600 dark:text-gray-400 mb-4">Database management, complex queries, and optimization</p>
-                    <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                        <div class="bg-blue-600 h-2.5 rounded-full skill-bar" style="width: 70%"></div>
-                    </div>
-                    <p class="text-right text-sm text-gray-500 dark:text-gray-400 mt-2">Advanced</p>
-                </div>
+            <!-- Name and Title -->
+            <div class="text-center w-full">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 dark:text-white mb-4 leading-tight">
+                    Kekeletso Basholo
+                </h1>
+                <h2 class="text-xl md:text-2xl text-blue-600 dark:text-blue-400 mb-8 font-medium">
+                    Data Analyst | Aspiring Data Scientist | Math Tutor
+                </h2>
+            </div>
 
-                <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:border-gray-700 skill-card">
-                    <div class="flex items-center mb-4">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" class="h-12 w-12 mr-4" alt="Pandas" loading="lazy">
-                        <h3 class="font-bold text-xl text-gray-800 dark:text-white">Pandas & NumPy</h3>
+            <!-- Professional Summary -->
+            <div class="w-full max-w-4xl">
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-100 dark:border-gray-700">
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 text-center">Professional Summary</h3>
+                    <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-center">
+                        Motivated Data Analyst with a strong foundation in mathematics, statistics and programming. 
+                        Skilled in Python, data visualization, and statistical modeling with hands-on experience in analytics projects. 
+                        Passionate about transforming raw data into actionable insights to support data-driven decision making. 
+                        Organized, dependable, and eager to contribute to analytical problem solving in professional settings
+                    </p>
+                    <div class="mt-6 flex flex-wrap gap-2 justify-center">
+                        <span class="bg-blue-100 dark:bg-blue-900/20 text-blue-800 dark:text-blue-400 text-sm px-3 py-1 rounded-full">Data Analysis</span>
+                        <span class="bg-green-100 dark:bg-green-900/20 text-green-800 dark:text-green-400 text-sm px-3 py-1 rounded-full">Machine Learning</span>
+                        <span class="bg-purple-100 dark:bg-purple-900/20 text-purple-800 dark:text-purple-400 text-sm px-3 py-1 rounded-full">Statistical Modeling</span>
+                        <span class="bg-orange-100 dark:bg-orange-900/20 text-orange-800 dark:text-orange-400 text-sm px-3 py-1 rounded-full">Data Visualization</span>
+                        <span class="bg-red-100 dark:bg-red-900/20 text-red-800 dark:text-red-400 text-sm px-3 py-1 rounded-full">Python & R</span>
+                        <span class="bg-indigo-100 dark:bg-indigo-900/20 text-indigo-800 dark:text-indigo-400 text-sm px-3 py-1 rounded-full">SQL Databases</span>
                     </div>
-                    <p class="text-gray-600 dark:text-gray-400 mb-4">Data manipulation, analysis, and numerical computing</p>
-                    <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                        <div class="bg-blue-600 h-2.5 rounded-full skill-bar" style="width: 50%"></div>
-                    </div>
-                    <p class="text-right text-sm text-gray-500 dark:text-gray-400 mt-2">Advanced</p>
-                </div>
-
-                <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:border-gray-700 skill-card">
-                    <div class="flex items-center mb-4">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" class="h-12 w-12 mr-4" alt="Machine Learning" loading="lazy">
-                        <h3 class="font-bold text-xl text-gray-800 dark:text-white">Machine Learning</h3>
-                    </div>
-                    <p class="text-gray-600 dark:text-gray-400 mb-4">Predictive modeling, classification, and regression analysis</p>
-                    <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                        <div class="bg-blue-600 h-2.5 rounded-full skill-bar" style="width: 30%"></div>
-                    </div>
-                    <p class="text-right text-sm text-gray-500 dark:text-gray-400 mt-2">Begginer</p>
-                </div>
-
-                <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:border-gray-700 skill-card">
-                    <div class="flex items-center mb-4">
-                        <img src="https://www.svgrepo.com/show/354427/tableau.svg" class="h-12 w-12 mr-4" alt="Tableau Logo" loading="lazy">
-                        <h3 class="font-bold text-xl text-gray-800 dark:text-white">Data Visualization</h3>
-                    </div>
-                    <p class="text-gray-600 dark:text-gray-400 mb-4">Matplotlib, Seaborn, Plotly, and Tableau dashboards</p>
-                    <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                        <div class="bg-blue-600 h-2.5 rounded-full skill-bar" style="width: 65%"></div>
-                    </div>
-                    <p class="text-right text-sm text-gray-500 dark:text-gray-400 mt-2">Intermediate</p>
                 </div>
             </div>
+
+            <!-- Call-to-Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="projects.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg text-center flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                    </svg>
+                    View My Projects
+                </a>
+                <a href="contact.html" class="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:-translate-y-1 text-center dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-400 dark:hover:text-white flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    Get In Touch
+                </a>
+            </div>
+            
+            <!-- Stats Grid -->
+            <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl w-full">
+                <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <div class="text-2xl font-bold text-blue-600 dark:text-blue-400 counter" data-target="5">0</div>
+                    <div class="text-sm text-gray-600 dark:text-gray-400">Projects Completed</div>
+                </div>
+                <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <div class="text-2xl font-bold text-purple-600 dark:text-purple-400 counter" data-target="30">0</div>
+                    <div class="text-sm text-gray-600 dark:text-gray-400">Students Tutored</div>
+                </div>
+                <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <div class="text-2xl font-bold text-orange-600 dark:text-orange-400 counter" data-target="1">0</div>
+                    <div class="text-sm text-gray-600 dark:text-gray-400">Years Experience</div>
+                </div>
+                <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <div class="text-2xl font-bold text-green-600 dark:text-green-400 counter" data-target="2">0</div>
+                    <div class="text-sm text-gray-600 dark:text-gray-400">Certifications</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-12">Certifications</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <!-- Certificate 1 -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 dark:border-gray-700 certificate-card">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 dark:bg-blue-900/20 p-3 rounded-lg mr-4 flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-lg text-gray-800 dark:text-white mb-1">IBM Data Analyst</h3>
+                            <p class="text-blue-600 dark:text-blue-400 text-sm mb-2">IBM / Coursera</p>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">Comprehensive data analysis training covering data cleaning, analysis, visualization, and Python programming.</p>
+                            <div class="flex flex-wrap gap-1 mb-3">
+                                <span class="bg-blue-100 dark:bg-blue-900/20 text-blue-800 dark:text-blue-400 text-xs px-2 py-1 rounded">Data Analysis</span>
+                                <span class="bg-blue-100 dark:bg-blue-900/20 text-blue-800 dark:text-blue-400 text-xs px-2 py-1 rounded">Python Programming</span>
+                                <span class="bg-blue-100 dark:bg-blue-900/20 text-blue-800 dark:text-blue-400 text-xs px-2 py-1 rounded">Visualization</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xs text-gray-500 dark:text-gray-400">Issued: October 2025</span>
+                                <a href="static/certificates/IBM Data Analyst.pdf" 
+                                   class="text-blue-600 dark:text-blue-400 hover:underline text-sm font-medium flex items-center"
+                                   target="_blank"
+                                   onclick="trackCertificateView('IBM Data Analyst')">
+                                    View Certificate
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 dark:border-gray-700 certificate-card">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-green-100 dark:bg-green-900/20 p-3 rounded-lg mr-4 flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600 dark:text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-lg text-gray-800 dark:text-white mb-1">CompTIA Data+ </h3>
+                            <p class="text-green-600 dark:text-green-400 text-sm mb-2">Stanford Online</p>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">Advanced machine learning algorithms, neural networks, and deep learning applications.</p>
+                            <div class="flex flex-wrap gap-1 mb-3">
+                                <span class="bg-green-100 dark:bg-green-900/20 text-green-800 dark:text-green-400 text-xs px-2 py-1 rounded">Machine Learning</span>
+                                <span class="bg-green-100 dark:bg-green-900/20 text-green-800 dark:text-green-400 text-xs px-2 py-1 rounded">Neural Networks</span>
+                                <span class="bg-green-100 dark:bg-green-900/20 text-green-800 dark:text-green-400 text-xs px-2 py-1 rounded">Deep Learning</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xs text-gray-500 dark:text-gray-400">Issued: September 2025</span>
+                                <a href="static/certificates/CompTIA Data+.pdf" 
+                                   class="text-green-600 dark:text-green-400 hover:underline text-sm font-medium flex items-center"
+                                   target="_blank"
+                                   onclick="trackCertificateView('CompTIA')">
+                                    View Certificate
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
 
         <!-- Enhanced Education Section -->
@@ -197,7 +231,7 @@
                     <ul class="mt-2 list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
                         <li>Taught R and Python for statistical analysis to undergraduate students</li>
                         <li>Created practical exercises using real-world datasets</li>
-                        <li>Assisted lectures with grading and tutorial coordianation</li>
+                        <li>Assisted lectures with grading and tutorial coordination</li>
                     </ul>
                 </div>
             </div>
